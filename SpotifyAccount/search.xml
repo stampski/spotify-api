@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="search" path="/search" id="c793b5b0-3034-40e2-ba38-f702774b09ea" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c793b5b0-3034-40e2-ba38-f702774b09eafileName">search</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>type</con:name>
+      <con:value>artist</con:value>
+      <con:style>QUERY</con:style>
+      <con:default>artist</con:default>
+      <con:option>album</con:option>
+      <con:option>artist</con:option>
+      <con:option>track</con:option>
+      <con:option>playlist</con:option>
+      <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>q</con:name>
+      <con:value>Julia Rocka Akcja</con:value>
+      <con:style>QUERY</con:style>
+      <con:default>Julia Rocka Akcja</con:default>
+      <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>market</con:name>
+      <con:value>PL</con:value>
+      <con:style>QUERY</con:style>
+      <con:default>PL</con:default>
+      <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="Method 1" id="776595e9-989b-4a4e-86fd-cab1965b6e10" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="04e41f78-8370-4ab0-86e6-20919a9014f4" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://accounts.spotify.com/search;type=track</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>kkk</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="type" value="track"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>q</con:entry>
+        <con:entry>type</con:entry>
+        <con:entry>market</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

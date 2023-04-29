@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="2TpxZ7JUBn3uw46aR7qd6V" path="/tracks/2TpxZ7JUBn3uw46aR7qd6V" id="afe8bdbd-d77d-4bef-a19d-3b0e57877c2b" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="afe8bdbd-d77d-4bef-a19d-3b0e57877c2bfileName">2TpxZ7JUBn3uw46aR7qd6V</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 1" id="43aadb14-c63c-4c7b-aa54-ff26298f6fe9" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="962b5dc2-9d59-4ea5-855f-db3e55aa0adf" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://api.spotify.com/v1/tracks/2TpxZ7JUBn3uw46aR7qd6V</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>kkk</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

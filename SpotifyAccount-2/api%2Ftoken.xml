@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="api/token" path="api/token" id="ca259863-7340-464f-9bb7-2820865f15cf" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ca259863-7340-464f-9bb7-2820865f15cffileName">api%2Ftoken</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>grant_type</con:name>
+      <con:value>client_credentials</con:value>
+      <con:style>QUERY</con:style>
+      <con:default>client_credentials</con:default>
+      <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="Method 1" id="d909a4b6-6b39-4ccf-8240-a4e71ece3e37" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="274a072f-b7b6-46e3-9201-18ef220df852" mediaType="application/x-www-form-urlencoded" postQueryString="true">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment>&lt;con:entry key="Authorisation" value="Basic OTA3MDM2MTc1YmFlNDA4NWFiMDcwMDY4YzgxMjRiYTk6OGNmZDk1YTUyZmEzNGE4M2I3ZmE3MzAxNWFiMmEzZjc=" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Content-Type" value="application/x-www-form-urlencoded" xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></con:setting>
+      </con:settings>
+      <con:endpoint>https://accounts.spotify.com/</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://accounts.spotify.com/api/token</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>kkk</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder>
+        <con:entry>grant_type</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

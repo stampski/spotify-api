@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="bd3b0527-3cea-41a4-b835-0f341c6a0d0c" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Test Case 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="bd3b0527-3cea-41a4-b835-0f341c6a0d0cfileName">Test-Case-1</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="814d9e83-7d1e-4aba-b7d8-5b6b90e87b6d">
+    <con:settings/>
+    <con:config service="SpotifyAccount" resourcePath="/search" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="04e41f78-8370-4ab0-86e6-20919a9014f4" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://accounts.spotify.com/search;type=track</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="a27d537e-1357-4964-8ae3-4aaaeff35514" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="d35b27b2-0ec3-4713-b685-b0e63e969813" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>kkk</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="market" value="PL"/>
+          <con:entry key="q" value="Julia Rocka Akcja"/>
+          <con:entry key="type" value="track"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>type</con:entry>
+          <con:entry>q</con:entry>
+          <con:entry>market</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request 2" id="61437c13-7298-4e6c-bc0e-25eeb852de9a">
+    <con:settings/>
+    <con:config service="SpotifyAccount" resourcePath="/search" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request 2" id="04e41f78-8370-4ab0-86e6-20919a9014f4" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.spotify.com/v1</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://accounts.spotify.com/search;type=track</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="a34cabaf-0461-4176-81da-f713e0b86198" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="a1e1f70d-f345-415e-b740-9c399541073c" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>kkk</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="market" value="PL"/>
+          <con:entry key="q" value="Julia Rocka Akcja"/>
+          <con:entry key="type" value="track"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>type</con:entry>
+          <con:entry>q</con:entry>
+          <con:entry>market</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
