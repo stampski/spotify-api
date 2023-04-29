@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="search" path="/search" id="c793b5b0-3034-40e2-ba38-f702774b09ea" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="search" path="/search" id="c793b5b0-3034-40e2-ba38-f702774b09ea" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="c793b5b0-3034-40e2-ba38-f702774b09eafileName">search</con:setting>
   </con:settings>
@@ -13,21 +13,21 @@
       <con:option>artist</con:option>
       <con:option>track</con:option>
       <con:option>playlist</con:option>
-      <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <con:description xsi:nil="true"/>
     </con:parameter>
     <con:parameter required="true">
       <con:name>q</con:name>
       <con:value>Julia Rocka Akcja</con:value>
       <con:style>QUERY</con:style>
       <con:default>Julia Rocka Akcja</con:default>
-      <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <con:description xsi:nil="true"/>
     </con:parameter>
     <con:parameter required="true">
       <con:name>market</con:name>
       <con:value>PL</con:value>
       <con:style>QUERY</con:style>
       <con:default>PL</con:default>
-      <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <con:description xsi:nil="true"/>
     </con:parameter>
   </con:parameters>
   <con:method name="Method 1" id="776595e9-989b-4a4e-86fd-cab1965b6e10" method="GET">
